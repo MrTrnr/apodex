@@ -1,0 +1,3 @@
+#exclure les fichiers .txt
+
+*.txt
