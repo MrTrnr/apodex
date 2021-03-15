@@ -1,0 +1,27 @@
+body
+{
+	background-color: #C10A0A; 
+}
+
+.video-responsive {
+    overflow: hidden;
+    /* screen-ratio 19:9 = 56,25% */
+    /* padding-bottom: 56.25%; */
+    position: relative;
+    /* height: 0; */
+
+    width: 50%;
+    /* screen-ratio 19:9 = 56,25% , 56.25% of 50% -> 28vw*/
+    height: 28vw;
+    /* background-color: aquamarine; */
+
+  }
+
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+

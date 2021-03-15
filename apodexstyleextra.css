@@ -1,0 +1,403 @@
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
+
+
+h1
+{
+	color : #FEFEFE;
+	font-family:'Bangers', cursive;
+	margin : 0;
+}
+
+p
+{
+	margin : 0;
+}
+
+#affichagePokemon 
+{
+	background-color : #FEFEFE;
+	margin: auto;
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#fondImagePokemon 
+{
+	background-color : #93B829;
+	margin: auto;
+	display : flex;
+	flex-direction: column;
+	justify-content: space-around;
+} 
+
+
+
+#idPokemon, #speciesNameValue, #abilitiesValue, #heldItemsValue, #heightValue, #hpValue, #attackValue, #defenseValue, #weightValue, #speedValue, #specialAttackValue, #specialDefenseValue 
+{
+	font-family: 'Open Sans', sans-serif;
+	color : black;
+}
+
+#nomPokemon, #speciesName, #abilities, #heldItems, #height, #hp, #attack, #defense, #weight, #speed, #specialAttack, #specialDefense, .bouton
+{
+	font-family: 'Bangers', cursive;
+	color : black;
+}
+
+#affichageCaracteristiques 
+{
+	background-color : #FEFEFE;
+	margin: 5px auto 5px auto;
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#fondImageCaracteristiques 
+{
+	background-color : #FD68DC;
+	margin: auto;
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#caracteristiquesHaut
+{
+	display :flex;
+	flex-direction: column;
+}
+
+.caseCaracteristiqueName
+{
+	text-align: right;
+}
+
+#conteneurSpeciesName
+{
+	display :flex;
+}
+
+#conteneurAbilities
+{
+	display :flex;
+}
+
+#conteneurHeldItems
+{
+	display :flex;
+}
+
+#caracteristiquesBas
+{
+	display :flex;
+}
+
+.caracteristiquesBasCase
+{
+	display :flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.conteneurNameAndValue
+{
+	display :flex;
+}
+
+.caseCaracteristiqueNameBas
+{
+	text-align: right;
+}
+
+.caseCaracteristiqueValueBas
+{
+	text-align: right;
+}
+
+#boutonPrecedent
+{
+	background-color: #408286;
+	text-align: center;
+}
+
+#boutonSuivant
+{
+	background-color: #D2C126;
+	text-align: center;
+}
+
+#boutons
+{
+	display : flex;
+}
+
+/*ecran de téléphone portable */
+@media screen and (max-width: 479px) and (orientation: portrait)
+{
+	h1
+	{
+		text-align: center;
+		font-size : 36px;
+	}
+
+	#imagePokemon
+	{
+		text-align: center;
+	}
+
+	#grandeImagePokemon 
+	{
+		display : none;
+	}
+
+	#idPokemon
+	{
+		font-size : 18px;
+		font-weight :bold;
+	}
+
+	#speciesNameValue, #abilitiesValue, #heldItemsValue, #heightValue, #hpValue, #attackValue, #defenseValue, #weightValue, #speedValue, #specialAttackValue, #specialDefenseValue 
+	{
+		font-size: 18px;
+	}
+
+	#nomPokemon, #speciesName, #abilities, #heldItems, #height, #hp, #attack, #defense, #weight, #speed, #specialAttack, #specialDefense
+	{
+		font-size : 18px;
+	}
+
+	#nomPokemon 
+	{
+		text-align: center;
+	}
+
+	#idPokemon
+		{
+			margin-left: 5px;
+		} 
+
+	#affichagePokemon 
+	{
+		height: 180px;
+		width: 180px;
+		border-radius: 10px;
+	}
+
+	#fondImagePokemon 
+	{
+		height: 160px;
+		width: 160px;
+	}
+
+	#affichageCaracteristiques 
+	{
+		height: 260px;
+		width: 330px;
+		border-radius: 10px;
+	}
+
+	#fondImageCaracteristiques
+	{
+		height: 240px;
+		width: 310px;
+	}
+
+	.caseCaracteristiqueName
+	{
+		margin : 4px 3px 0px 3px;
+		width: 35%;
+	}
+
+	.caseCaracteristiqueValue
+	{
+		margin : 0px;
+		width: 65%;
+	}
+
+	.caseCaracteristiqueNameBas
+	{
+		margin : 4px 3px 0px 3px;
+		width: 70%;
+	}
+
+	.caseCaracteristiqueValueBas
+	{
+		margin : 0px;
+	}
+
+	#boutons
+	{
+		justify-content: center;
+	}
+
+	.bouton
+	{
+		width: 110px;
+		height: 40px;
+		font-weight: bold;
+		font-size: 30px;
+		border-radius: 5px;
+		margin : 5px 5px 0 5px;
+		padding: 7px 0 0 0;
+	}
+
+}
+
+/*ecran d'ordinateur*/
+@media screen and (min-width: 480px)
+{
+	body 
+	{
+		display : flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-height: 530px;
+	}
+
+	h1
+	{
+		text-align: center;
+		font-size : 77px;
+		order: 2;
+	}
+
+	#imagePokemon
+	{
+		display: none;
+	}
+
+	#grandeImagePokemon 
+	{
+		text-align : center;
+	}
+
+	#idPokemon
+	{
+		font-size : 33px;
+		font-weight :bold;
+	}
+
+	#speciesNameValue, #abilitiesValue, #heldItemsValue 
+	{
+		font-size: 24px;
+	}
+	
+	#heightValue, #hpValue, #attackValue, #defenseValue, #weightValue, #speedValue, #specialAttackValue, #specialDefenseValue 
+	{
+		font-size: 18px;
+	}
+
+	#speciesName, #abilities, #heldItems, #height, #hp, #attack, #defense, #weight, #speed, #specialAttack, #specialDefense
+	{
+		font-size : 26px;
+	}
+
+	#nomPokemon 
+	{
+		text-align: center;
+		font-size: 26px;
+	}
+
+	#idPokemon
+	{
+		margin-left: 5px;
+	} 
+
+	#affichagePokemon 
+	{
+		height: 525px;
+		width: 525px;
+		border-radius: 25px;
+	}
+
+	#fondImagePokemon 
+	{
+		height: 475px;
+		width: 475px;
+	}
+
+	/* rectangle blanc caracteristiques*/
+	#affichageCaracteristiques 
+	{
+		height: 340px;
+		width: 630px;
+		border-radius: 10px;
+		order: 3;
+	}
+
+	/*rectangle rose caracteristiques*/
+	#fondImageCaracteristiques
+	{
+		height: 310px;
+		width: 590px;
+	}
+
+	#caracteristiquesHaut
+	{
+		margin : 3px 3px 40px 3px;
+	}
+
+	.caseCaracteristiqueName
+	{
+		margin : 4px 3px 0px 3px;
+		width: 50%;
+	}
+
+	.caseCaracteristiqueValue
+	{
+		margin : 0px 0px 0px 30px;
+		width: 50%;
+	}
+
+	#caracteristiquesBas
+	{
+		display : flex;
+		flex-direction: row;
+	}
+
+
+
+	.caseCaracteristiqueNameBas
+	{
+		margin : 4px 3px 0px 3px;
+		width: 55%;
+	}
+
+	.caseCaracteristiqueValueBas
+	{
+		margin : 4px 0px 0px 30px;
+	}
+
+	#boutons 
+	{
+		justify-content: space-around;
+		order: 4;
+	}
+
+	.bouton
+	{
+		width: 150px;
+		height: 40px;
+		font-weight: bold;
+		font-size: 36px;
+		border-radius: 5px;
+		margin : 5px 5px 0 5px;
+		padding: 7px 0 0 0;
+	}
+
+}
