@@ -18,17 +18,9 @@ let currentDate = new Date(Date.parse(new Date()) - 86400000);
 let currentYear = currentDate.getFullYear(); //used for drop down list of years
 let currentMonth = currentDate.getMonth() + 1; //in new Date, January = 0, December = 11
 let currentDay = currentDate.getDate();
-// console.log("currentDate : " + typeof currentDate); //return object
-// console.log("currentYear : " + typeof currentYear); //return number
-// console.log("currentMonth : " + typeof currentMonth); //return number
-// console.log("currentDay : " + typeof currentDay); //return number
-// console.log(
-//   `currentDate au format nombre : ${currentYear} ${currentMonth} ${currentDay}`
-// );
 
 //initialiazing the date to display
 let dateToDisplay = currentDate;
-// let dateToDisplay = new Date("2021-03-01");
 
 //defining variables that store date to display before clicking button next/previous date
 let yearToDisplayRecorded;
@@ -44,13 +36,6 @@ let dateUser;
 let yearToDisplay = dateToDisplay.getFullYear();
 let monthToDisplay = dateToDisplay.getMonth() + 1; //in new Date, January = 0, December = 11
 let dayToDisplay = dateToDisplay.getDate();
-// console.log("dateToDisplay : " + typeof dateToDisplay); //return object
-// console.log("yearToDisplay : " + typeof yearToDisplay); //return number
-// console.log("monthToDisplay : " + typeof monthToDisplay); //return number
-// console.log("dayToDisplay : " + typeof dayToDisplay); //return number
-// console.log(
-//   `currentDate au format nombre : ${yearToDisplay} ${monthToDisplay} ${dayToDisplay}`
-// );
 
 //display media (image or video) of the day with information
 displayInfo(dateToDisplay);
@@ -93,12 +78,8 @@ function chooseDate() {
     window.alert("date invalide");
     dateToDisplay = currentDate;
   }
-  updateInfo();
 
-  // dayUserNumber = Number(dayUserString);
-  // monthUserNumber = Number(monthUserString) - 1;
-  // yearUserNumber = Number(yearUserString);
-  // console.log(new Date(yearUserNumber, monthUserNumber, dayUserNumber));
+  updateInfo();
 }
 
 //date is given by clicking button "Précédent"
@@ -292,9 +273,6 @@ function displayInfo(date) {
         document.getElementById("copyright").innerHTML = "";
       }
 
-      //display date of the media
-      // document.getElementById("date").innerHTML = json.date;
-
       //display title of the media
       document.getElementById("title").innerHTML = json.title;
 
@@ -304,10 +282,6 @@ function displayInfo(date) {
     .catch(function (error) {
       var p = document.createElement("p");
       //procéder à l'effacement des infos et afficher un message d'erreur
-      //
-      //
-      //
-      //
 
       p.appendChild(
         document.createTextNode("Il n'existe pas de média pour cette date")
