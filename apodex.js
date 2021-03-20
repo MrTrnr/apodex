@@ -6,13 +6,13 @@ let firstImageDate = "1995-06-16";
 
 //defining date of today (in fact today minus 1 day, because of time difference between France and the US,
 //we assume we can only have image of yesterday whatever the hour in France.
-// let currentDate = new Date(Date.parse(new Date()) - 86400000);
+let currentDate = new Date(Date.parse(new Date()) - 86400000);
 
 //test affichage avec video
 // let currentDate = new Date("2021-02-23");
 
 //test affichage avec date du jour
-let currentDate = new Date();
+// let currentDate = new Date();
 
 //extracting year, month and day of today as numbers
 let currentYear = currentDate.getFullYear(); //used for drop down list of years
