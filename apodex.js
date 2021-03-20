@@ -263,7 +263,7 @@ function displayInfo(date) {
       } else {
         document.getElementById(
           "media"
-        ).innerHTML = `<img src="${json.url}" width="20%" alt="${json.title}">`;
+        ).innerHTML = `<img src="${json.url}" alt="${json.title}">`;
       }
       //display name of the author only if copyright exists
       if (json.copyright != undefined) {

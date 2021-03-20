@@ -4,52 +4,51 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link href="apodexstyle.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Strait&display=swap" rel="stylesheet"> 
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width" />
-
     <title>APODEX : Astronomy Picture Of the Day indEX</title>
   </head>
 
   <body>
-    <style></style>
-    <h1>APODEX : Astronomy Picture Of the Day indEX</h1>
+    <h1 id="titlePage">APODEX : Astronomy Picture Of the Day indEX</h1>
+      <div id="infoToDisplayContainer">
+        <div id="mediaContainer">
+          <div id="media"></div>
+          <p id="copyright"></p>
+        </div>
+        <div id="buttonsAndTextContainer">
+          <div id="buttonsContainer">
+            <div id=dateButtonsContainer>
+              <!-- drop down list for choosing the day -->
+              <label for="selectDay"></label>
+              <select class="lightButton" id="selectDay" name="day"></select>
 
-    <!-- drop down list for choosing the day -->
-    <!-- <p>JOUR</p> -->
-    <label for="selectDay"></label>
-    <select id="selectDay" name="day"></select>
+              <!-- drop down list for choosing the month -->
+              <label for="selectMonth"></label>
+              <select class="lightButton" id="selectMonth" name="month"></select>
 
-    <!-- drop down list for choosing the month -->
-    <!-- <p>MOIS</p> -->
-    <label for="selectMonth"></label>
-    <select id="selectMonth" name="month"></select>
+              <!-- drop down list for choosing the year -->
+              <label for="selectYear"></label>
+              <select class="lightButton" id="selectYear" name="year"></select>
 
-    <!-- drop down list for choosing the year -->
-    <!-- <p>ANNEE</p> -->
-    <label for="selectYear"></label>
-    <select id="selectYear" name="year"></select>
-
-    <button onclick="chooseDate()">Go</button>
-    <button onclick="previousDate()">Previous</button>
-    <button onclick="nextDate()">Next</button>
-
-    <p id="showDate"></p>
-    <p id="showDateError"></p>
-
-    <ul>
-      <li id="media"></li>
-      <li id="copyright"></li>
-      <!-- <li id="date"></li> -->
-      <li id="title"></li>
-      <li id="explanation"></li>
-    </ul>
+              <button class="lightButton" onclick="chooseDate()">Go</button>
+            </div>
+            <div id=prevNextButtonsContainer>
+              <button class="plainButton" onclick="previousDate()">Previous</button>
+              <button class="plainButton" onclick="nextDate()">Next</button>
+            </div>
+          </div>
+          
+          <p id="showDateError"></p>
+          <p id="title"></p>
+          <p id="explanation"></p>
+        </div>
+      </div>
     <script type="text/javascript" src="apodex.js"></script>
   </body>
 </html>
