@@ -9,7 +9,10 @@ let firstImageDate = "1995-06-16";
 // let currentDate = new Date(Date.parse(new Date()) - 86400000);
 
 //test affichage avec video
-let currentDate = new Date("2021-02-23");
+// let currentDate = new Date("2021-02-23");
+
+//test affichage avec date du jour
+let currentDate = new Date();
 
 //extracting year, month and day of today as numbers
 let currentYear = currentDate.getFullYear(); //used for drop down list of years
