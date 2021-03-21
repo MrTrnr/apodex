@@ -1,3 +1,4 @@
-#exclure les fichiers .txt
+#exclure les fichiers .txt et *.jpg
 
 *.txt
+*.jpg
