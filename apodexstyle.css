@@ -1,6 +1,102 @@
 body
 {
 	background-color: #061669; 
+    font-family: 'Strait', sans-serif;
+    padding: 0;
+    margin : auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#titlePage
+{
+    color: #fefefe;
+    margin : 5%;
+    text-align: center;
+    font-weight : lighter;
+}
+
+#infoToDisplayContainer
+{
+    display: flex;
+    text-align: center;
+}
+
+#media
+{
+    width: 100%;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+#copyright
+{
+    margin-right: 5%;
+    margin-top: 1%;
+    text-align: right;
+    color: #061669;
+}
+
+#buttons
+{
+    text-align: center;
+}
+
+#dateButtonsContainer
+{
+    margin: 0 5% 5% 5% ;
+    display: flex;
+    justify-content: space-between;
+}
+
+label, select, button
+{
+    margin:0;
+}
+
+
+.lightButton
+{
+    border-radius: 0.2em;
+    background-color: #fefefe;
+    text-decoration: none;
+    border: 1px solid #061669;
+    color: #061669;
+    font-size: 1.1em;
+}
+
+#prevNextButtonsContainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.plainButton
+{
+    border-radius: 0.2em;
+    background-color: #061669;
+    text-decoration: none;
+    border: 1px solid #061669;
+    color: #fefefe;
+    padding: 0 2em 0.1em 2em;
+    font-size: 1.4em;
+}
+
+#title, #explanation
+{
+    text-align: left;
+    margin: 1% 5% 1% 5%;
+}
+
+#title
+{
+    font-size: 2em;
 }
 
 .video-responsive {
@@ -9,19 +105,104 @@ body
     /* padding-bottom: 56.25%; */
     position: relative;
     /* height: 0; */
-
-    width: 50%;
-    /* screen-ratio 19:9 = 56,25% , 56.25% of 50% -> 28vw*/
-    height: 28vw;
-    /* background-color: aquamarine; */
+    width: 100%;
+    /* screen-ratio 19:9 = 56,25%*/
+    height: 56.25vw;
 
   }
 
   .video-responsive iframe {
     left: 0;
     top: 0;
-    height: 100%;
     width: 100%;
     position: absolute;
   }
 
+/*ecran de téléphone portable */
+@media screen and (max-width: 479px)
+{
+    #infoToDisplayContainer
+    {
+        flex-direction: column;
+        background-color: #fefefe;
+    }
+
+    #titlePage
+    {
+        font-size: 0.8em;
+    }
+
+    #copyright
+    {
+        color: #061669;
+        font-size: 0.6em
+    }
+
+    .video-responsive iframe
+    {
+        height: 100%;
+    }
+}
+
+/*ecran d'ordinateur*/
+@media screen and (min-width: 480px)
+{
+    #infoToDisplayContainer
+    {
+        flex-direction: row;
+        background-color: #061669;
+    }
+
+    #titlePage
+    {
+        font-size: 4em;
+    }
+
+    #mediaContainer
+    {
+        width:50%;
+        margin-left: 1%;
+    }
+
+    #buttonsAndTextContainer
+    {
+        width:50%;
+        background-color: #fefefe;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    #copyright
+    {
+        color: #fefefe;
+        font-size: 1em
+    }
+
+    #buttonsContainer{
+        display:flex;
+        flex-direction: row;
+        margin: 4% 0 0 0;
+    }
+
+    #dateButtonsContainer
+    {
+        flex-grow: 5;
+    }
+
+    #prevNextButtonsContainer
+    {
+        flex-grow: 1;
+        height: 1.8em;
+    }
+
+    .plainButton
+    {
+        padding: 0 2em 0.1em 2em;
+        font-size: 1.4em;
+    }
+
+    .video-responsive iframe
+    {
+        height: 50%;
+    }
+}
