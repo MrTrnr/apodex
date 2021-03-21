@@ -282,9 +282,7 @@ function displayInfo(date) {
     .catch(function (error) {
 
         throw new Error("HTTP error, status = " + response.status);
-        document.getElementById(
-          "showDateError"
-        ).innerHTML = `Il n'y a pas de média pour cette date`;
+        document.getElementById("showDateError").innerHTML = `Il n'y a pas de média pour cette date`;
 
       // var p = document.createElement("p");
       //procéder à l'effacement des infos et afficher un message d'erreur
