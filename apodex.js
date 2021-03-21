@@ -280,13 +280,19 @@ function displayInfo(date) {
       document.getElementById("explanation").innerHTML = json.explanation;
     })
     .catch(function (error) {
-      var p = document.createElement("p");
+
+        throw new Error("HTTP error, status = " + response.status);
+        document.getElementById(
+          "showDateError"
+        ).innerHTML = `Il n'y a pas de média pour cette date`;
+
+      // var p = document.createElement("p");
       //procéder à l'effacement des infos et afficher un message d'erreur
 
-      p.appendChild(
-        document.createTextNode("Il n'existe pas de média pour cette date")
-      );
+      // p.appendChild(
+      //   document.createTextNode("Il n'existe pas de média pour cette date")
+      // );
       //null must be put as 2nd parameter
-      document.body.insertBefore(p, null);
+      // document.body.insertBefore(p, null);
     });
 }
