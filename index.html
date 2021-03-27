@@ -20,23 +20,26 @@
         <div id="buttonsAndTextContainer">
           <div id="buttonsContainer">
             <div id=dateButtonsContainer>
-              <!-- drop down list for choosing the day -->
-              <label for="selectDay"></label>
-              <select class="lightButton" id="selectDay" name="day"></select>
-
-              <!-- drop down list for choosing the month -->
-              <label for="selectMonth"></label>
-              <select class="lightButton" id="selectMonth" name="month"></select>
-
-              <!-- drop down list for choosing the year -->
-              <label for="selectYear"></label>
-              <select class="lightButton" id="selectYear" name="year"></select>
-
-              <button class="lightButton" onclick="chooseDate()">Go</button>
+              <div class="buttonContainer">
+	            <!-- drop down list for choosing the day -->
+	            <label for="selectDay"></label>
+	            <select class="lightButton" id="selectDay" name="day"></select>
+	          </div>
+	          <div class="buttonContainer">
+	            <!-- drop down list for choosing the month -->
+	            <label for="selectMonth"></label>
+	            <select class="lightButton" id="selectMonth" name="month"></select>
+	          </div>
+	          <div class="buttonContainer">
+	            <!-- drop down list for choosing the year -->
+	            <label for="selectYear"></label>
+	            <select class="lightButton" id="selectYear" name="year"></select>
+	          </div>
+              <button class="buttonContainer lightButton" onclick="chooseDate()">Go</button>
             </div>
             <div id="prevNextButtonsContainer">
-              <button class="plainButton" onclick="previousDate()">&lt;</button>
-              <button class="plainButton" onclick="nextDate()">&gt;</button>
+              <button class="buttonContainer plainButton" onclick="previousDate()">&lt;</button>
+              <button class="buttonContainer plainButton" onclick="nextDate()">&gt;</button>
             </div>
           </div>
           

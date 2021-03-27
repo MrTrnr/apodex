@@ -160,6 +160,7 @@ label, select, button
 
     #mediaContainer
     {
+        
         width:50%;
         margin-left: 1%;
     }
@@ -181,6 +182,7 @@ label, select, button
     #buttonsContainer{
         display:flex;
         flex-direction: row;
+        flex-wrap: wrap;
         margin: 4% 0 0 0;
     }
 
