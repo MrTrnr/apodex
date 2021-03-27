@@ -179,7 +179,8 @@ label, select, button
         font-size: 1em
     }
 
-    #buttonsContainer{
+    #buttonsContainer
+    {
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
